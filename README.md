@@ -7,9 +7,6 @@ Second, Machine Translation models trained from large scale code corpus to learn
 Third, a program analysis method that assigns local variables to structure of MIs to get the final code. 
 InvocMap operates in two modes of input for describing MIs for developers, from method names directly, and from natural language description. 
 By evaluation on data from 1000 high-quality Java projects, we got the precision as up to 89\% for MI suggestion from method names, and over 60\% for MI suggestion from NL description, which outperforms the prior work and shows the potential of our approach for realizing LP.
-**Authors: Hung Phan, Eliska Kloberdanz, Jeremiah Roghair** from Department of Computer Science, Iowa State University, USA.
-
-This is the research project in the course Advance in Software Engineering - COMS 665 (Spring 2020) - Iowa State University, USA.
 
 # Requirements:
 - Python 3.6.
