@@ -10,7 +10,7 @@ import consts.PathConstanct;
 import utils.FileIO;
 import utils.SortUtil;
 
-public class MIFinalTranslationEvaluation {
+public class LiterateProgrammingEvaluation {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
