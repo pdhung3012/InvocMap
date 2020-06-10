@@ -120,7 +120,7 @@ public class MICandidateGenerationAndRanking {
 //		String fopInputMnames=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step2_methodNames\\";
 //		String fopInputSequences=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step3_inputSequence\\";
 //		String fopInputTrans=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step4_trans\\";
-		String fopSplitTrans=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step5_splitTrans\\";
+		String fopSplitTrans=PathConstanct.PathLiterateProgrammingExpReplication+File.separator+"step5_splitTrans"+File.separator;
 		
 //		new File(fopOutputSplitTrans).mkdir();
 //		String fname_methods="methods.txt";

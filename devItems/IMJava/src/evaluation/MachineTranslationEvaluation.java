@@ -83,9 +83,9 @@ public class MachineTranslationEvaluation {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String fop_input=PathConstanct.PATH_PROJECT_TTT_CUR_EVAL_DATA+File.separator;
-		String fop_output=PathConstanct.PATH_PROJECT_TTT_CUR_EVAL_DATA+File.separator+"eval"+File.separator;
-		String fop_mapTotalId=PathConstanct.PATH_PROJECT_TTT_CUR_EVAL_DATA+File.separator+"map"+File.separator;
+		String fop_input=PathConstanct.PathMachineTranslationCorpus+File.separator;
+		String fop_output=PathConstanct.PathMachineTranslationEvalOutput+File.separator+"eval"+File.separator;
+		String fop_mapTotalId=PathConstanct.PathMachineTranslationCorpus+File.separator+"map"+File.separator;
 		new File(fop_output).mkdir();
 		
 		String fn_trainSource="train.s";

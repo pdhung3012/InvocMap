@@ -4,17 +4,17 @@ import java.io.File;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 
-import consts.PathConstanct;
+import constanct.PathConstanct;
 import utils.FileIO;
 
 public class NeuralEmbeddingEvaluation {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String fopInputTextMetaData=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\IVC\\a_NLAndMethodNames\\";
-		String fopInputPrePostfix=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step1_prepostfix\\";
-		String fopInputMnames=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step2_methodNames\\";
-		String fopOutputAccMnames=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\accuracy\\";
+		String fopInputTextMetaData=PathConstanct.PathLiterateProgrammingCorpus+"IVC"+File.separator+"a_NLAndMethodNames"+File.separator;
+		String fopInputPrePostfix=PathConstanct.PathLiterateProgrammingCorpus+File.separator+"step1_prepostfix"+File.separator;
+		String fopInputMnames=PathConstanct.PathLiterateProgrammingCorpus+File.separator+"step2_methodNames_combine"+File.separator;
+		String fopOutputAccMnames=PathConstanct.PathLiterateProgrammingEvaluationOutput+"accuracy"+File.separator;
 		String fname_methods="methods.txt";
 		String fname_accMethodIden="identifyMethodNames.txt";
 		

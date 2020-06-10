@@ -4,7 +4,7 @@ import java.io.File;
 import java.nio.file.Files;
 import java.util.ArrayList;
 
-import consts.PathConstanct;
+import constanct.PathConstanct;
 import utils.FileIO;
 import utils.FileUtil;
 import utils.StanfordLemmatizer;
@@ -56,7 +56,7 @@ public class TrainPreparationForNeuralEmbedding {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String fopInput=PathConstanct.PATH_PROJECT_NL_SUPPORT;
+		String fopInput=PathConstanct.PathMachineTranslationCorpus;
 		String fopOutput=fopInput+"nlSupport/";
 		String idenTag="#identifier";
 		
@@ -115,21 +115,4 @@ public class TrainPreparationForNeuralEmbedding {
 
 }
 
-class PrePostFixObject{
-	private String prefix;
-	private String postfix;
-	public String getPrefix() {
-		return prefix;
-	}
-	public void setPrefix(String prefix) {
-		this.prefix = prefix;
-	}
-	public String getPostfix() {
-		return postfix;
-	}
-	public void setPostfix(String postfix) {
-		this.postfix = postfix;
-	}
-	
-	
-}
+

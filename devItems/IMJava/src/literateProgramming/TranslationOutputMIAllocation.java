@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
-import consts.PathConstanct;
+import constanct.PathConstanct;
 import utils.FileIO;
 import utils.MapUtil;
 
@@ -15,13 +15,10 @@ public class TranslationOutputMIAllocation {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		String fopInputPrePostfix=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step1_prepostfix\\";
-//		String fopInputMnames=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step2_methodNames\\";
-		String fopInputSequences=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step3_inputSequence\\";
-//		String fopInputTrans=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step4_trans\\";
-		String fopSplitTrans=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step5_splitTrans\\";
-		String fopExpression=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step6_expr\\";
-		String fopMapTotalId=PathConstanct.PATH_PROJECT_NL_SUPPORT+"map"+File.separator;
+		String fopInputSequences=PathConstanct.PathLiterateProgrammingExpReplication+"step3_inputSequence"+File.separator;
+		String fopSplitTrans=PathConstanct.PathLiterateProgrammingExpReplication+"step5_splitTrans"+File.separator;
+		String fopExpression=PathConstanct.PathLiterateProgrammingExpReplication+"step6_expr"+File.separator;
+		String fopMapTotalId=PathConstanct.PathMachineTranslationCorpus+"map"+File.separator;
 		
 		new File(fopExpression).mkdir();
 //		String fname_methods="methods.txt";

@@ -1,5 +1,7 @@
 package literateProgramming;
 
+import java.io.File;
+
 import consts.PathConstanct;
 import utils.StanfordLemmatizer;
 
@@ -8,8 +10,8 @@ public class TokensExtractionFromLPCodeTree {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String inPath=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\IVC\\b_code-missingMIs\\";
-		String outPath=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step0_sequence\\";
+		String inPath=constanct.PathConstanct.PathLiterateProgrammingExpReplication+"IVC"+File.separator+"b_code-missingMIs"+File.separator;
+		String outPath=constanct.PathConstanct.PathLiterateProgrammingExpReplication+File.separator+"step0_sequence"+File.separator;
 		StanfordLemmatizer lemm=new StanfordLemmatizer();
 		OnlySourceSequenceGeneratorForNL mcsg=new OnlySourceSequenceGeneratorForNL(inPath,lemm);
 		mcsg.generateSequences(outPath);

@@ -7,8 +7,8 @@ import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 
-import consts.PathConstanct;
-import corpusPreparation.PrePostFixObject;
+import constanct.PathConstanct;
+import entities.PrePostFixObject;
 import utils.FileIO;
 import utils.StanfordLemmatizer;
 
@@ -173,9 +173,9 @@ public class PrePostCodeAndNLTokensAllocation {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String fpInputSource=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step0_sequence\\source.txt";
-		String fopInputTextMetaData=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\IVC\\a_NLAndMethodNames\\";
-		String fopOutputPrePostfix=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step1_prepostfix\\";
+		String fpInputSource=PathConstanct.PathLiterateProgrammingExpReplication+File.separator+"step0_sequence"+File.separator+"source.txt";
+		String fopInputTextMetaData=PathConstanct.PathLiterateProgrammingExpReplication+File.separator+"IVC"+File.separator+"a_NLAndMethodNames"+File.separator;
+		String fopOutputPrePostfix=PathConstanct.PathLiterateProgrammingExpReplication+"step1_prepostfix"+File.separator;
 		String fname_Prefix="ele_prefix.txt";
 		String fname_Postfix="ele_postfix.txt";
 		String fname_varInNaturalLanguage="ele_varInfo.txt";

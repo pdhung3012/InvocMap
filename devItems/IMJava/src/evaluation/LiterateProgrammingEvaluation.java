@@ -1,12 +1,14 @@
 package evaluation;
 
 import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 
-import consts.PathConstanct;
+import constanct.PathConstanct;
 import utils.FileIO;
 import utils.SortUtil;
 
@@ -14,13 +16,13 @@ public class LiterateProgrammingEvaluation {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String fopInputTextMetaData=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\IVC\\a_NLAndMethodNames\\";
-		String fopInputPrePostfix=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step1_prepostfix\\";
-		String fopInputMnames=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step2_methodNames\\";
-		String fopInRankingCandidates=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step7_ranking\\";
+		String fopInputTextMetaData=PathConstanct.PathLiterateProgrammingCorpus+"IVC"+File.separator+"a_NLAndMethodNames"+File.separator;
+		String fopInputPrePostfix=PathConstanct.PathLiterateProgrammingCorpus+File.separator+"step1_prepostfix\\"+File.separator;
+		String fopInputMnames=PathConstanct.PathLiterateProgrammingCorpus+File.separator+"step2_methodNames\\"+File.separator;
+		String fopInRankingCandidates=PathConstanct.PathLiterateProgrammingCorpus+"nlSupport\\step7_ranking\\";
 		
-		String fopOutputAccMnames=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\accuracy\\";
-		String fopOutputAccResultDetails=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\accuracy\\details\\";
+		String fopOutputAccMnames=PathConstanct.PathLiterateProgrammingEvaluationOutput+"accuracy"+File.separator;
+		String fopOutputAccResultDetails=PathConstanct.PathLiterateProgrammingEvaluationOutput+File.separator+"accuracy"+File.separator+"details"+File.separator;
 		String fname_methods="methods.txt";
 		String fname_accByExactMatch="accuracy_exactMatch.txt";
 		String fname_accByCosineSimilarity="accuracy_cosineSim.txt";

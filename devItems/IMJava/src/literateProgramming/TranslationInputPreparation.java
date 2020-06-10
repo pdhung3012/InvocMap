@@ -3,7 +3,7 @@ package literateProgramming;
 import java.io.File;
 import java.util.ArrayList;
 
-import consts.PathConstanct;
+import constanct.PathConstanct;
 import utils.FileIO;
 
 public class TranslationInputPreparation {
@@ -29,9 +29,9 @@ public class TranslationInputPreparation {
 		// TODO Auto-generated method stub
 //		String fpInputSource=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step0_sequence\\source.txt";
 //		String fopInputTextMetaData=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\IVC\\a_NLAndMethodNames\\";
-		String fopInputPrePostfix=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step1_prepostfix\\";
-		String fopInputMnames=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step2_methodNames\\";
-		String fopOutputMnames=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step3_inputSequence\\";
+		String fopInputPrePostfix=PathConstanct.PathLiterateProgrammingExpReplication+"step1_prepostfix"+File.separator;
+		String fopInputMnames=PathConstanct.PathLiterateProgrammingExpReplication+"step2_methodNames"+File.separator;
+		String fopOutputMnames=PathConstanct.PathLiterateProgrammingExpReplication+"step3_inputSequence"+File.separator;
 		
 		
 		String fname_Prefix="ele_prefix.txt";

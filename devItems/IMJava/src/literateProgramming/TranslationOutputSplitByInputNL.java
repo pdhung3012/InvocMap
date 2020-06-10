@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
-import consts.PathConstanct;
+import constanct.PathConstanct;
 import utils.FileIO;
 
 public class TranslationOutputSplitByInputNL {
@@ -29,11 +29,10 @@ public class TranslationOutputSplitByInputNL {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String fopInputPrePostfix=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step1_prepostfix\\";
-		String fopInputMnames=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step2_methodNames\\";
-		String fopInputSequences=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step3_inputSequence\\";
-		String fopInputTrans=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step4_trans\\";
-		String fopOutputSplitTrans=PathConstanct.PATH_PROJECT_NL_SUPPORT+"nlSupport\\step5_splitTrans\\";
+		
+		String fopInputSequences=PathConstanct.PathLiterateProgrammingExpReplication+"step3_inputSequence"+File.separator;
+		String fopInputTrans=PathConstanct.PathLiterateProgrammingExpReplication+"step4_trans\\";
+		String fopOutputSplitTrans=PathConstanct.PathLiterateProgrammingExpReplication+"step5_splitTrans"+File.separator;
 		
 		new File(fopOutputSplitTrans).mkdir();
 //		String fname_methods="methods.txt";
