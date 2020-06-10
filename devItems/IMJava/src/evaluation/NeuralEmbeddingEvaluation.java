@@ -7,7 +7,7 @@ import java.util.LinkedHashSet;
 import consts.PathConstanct;
 import utils.FileIO;
 
-public class CMNGenerationEvaluation {
+public class NeuralEmbeddingEvaluation {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
