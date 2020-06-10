@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 
-import consts.PathConstanct;
+import constanct.PathConstanct;
 import utils.FileUtil;
 import utils.MapUtil;
 import utils.ReorderingTokens;
