@@ -67,28 +67,37 @@ To run for a combined model:
 From now, run the following steps:
 
 **Tokenization**
+
 1) To parse code with NL to generate tokens, run:
 ```java TokensExtractionFromLPCodeTree.java```
+
 2) To split precode, postcode and integrate NL information, run:
 ```java PrePostCodeAndNLTokensAllocation.java```
 
 **Neural Embedding**
+
 3) Change the locations of Doc2Vec models to folder of Doc2Vec you got from the data, before run this Python file:
 ```python GenerateCMNByCombinationModel.py```
 You should get the generated CMNs in step2 folder.
 
 **Machine Translation**
+
 4) To integrate CMNs to precode, postcode and NL, run:
 ```java TranslationInputPreparation.java```
+
 5) Take input inside step3_inputSequence and run the MT model to get trans.txt file. Then, you put this file to step4_trans folder.
+
 6) To split translation results to be corresponding with each LPCSs, run:
 ```java TranslationOutputSplitByInputNL.java```
+
 7) To reorder the translated results, run:
 ```java TranslationOutputReordering.java```
+
 8) To find the SAST related as the translated results of CMNs, run:
 ```java TranslationOutputMIAllocation.java```
 
 **Program Analysis and Ranking Candidates**
+
 9) To assign variables to SASTs and rank results, run:
 ```java MICandidateGenerationAndRanking.java```
 
