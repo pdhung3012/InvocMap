@@ -7,3 +7,5 @@ In this folder you will have:
 - Parallel corpuses for Machine Translation.
 - Neural Embedding prefix and postfix corpuses.
 - Model of Neural Embedding for CMN inferencce.
+- Model of Machine Translation.
+- config folder: all configurations of Phrase-based SMT translation model.

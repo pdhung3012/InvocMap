@@ -1,0 +1,11 @@
+Inside IVC (InvocMap Code) folder:
+1) a_NLAndMethodNames: Information of Natural Language of 100 code snippets. In each file (001 for example), we have:
+
+Expected code: str.charAt(pos + 1)
+Natural Language: return the char value at index pos + 1 for str
+Expected core method name: charAt
+Location to github code: https://github.com/sakaiproject/sakai/blob/master/kernel/kernel-impl/src/main/java/org/sakaiproject/util/impl/FormattedTextImpl.java
+Method Line: 872-977
+
+2) b_code-missingMIs: Source code of 100 code snippets. Each code snippets will have one unknownMethod() which represents the natural language part.
+3) screenshots: Screenshot of 20 LP-CSs in the study of Q1.
