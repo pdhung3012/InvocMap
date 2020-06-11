@@ -2,7 +2,8 @@ package literateProgramming;
 
 import java.io.File;
 
-import consts.PathConstanct;
+import constanct.PathConstanct;
+import parser.OnlySourceSequenceGeneratorForNL;
 import utils.StanfordLemmatizer;
 
 public class TokensExtractionFromLPCodeTree {
