@@ -1,0 +1,10 @@
+RQ1:
+- The csv results from 2 experienced developers.
+RQ2:
+- cmnInfer_combine: generated CMNs which uses combined models of prefix and postfix.
+- cmnInfer_prefix or cmnInfer_postfix: generated CMNs which uses only prefix or postfix models.
+RQ3:
+- All of evaluation of machine translation models in Table 4.
+RQ4:
+- acc folder: all accuracy of similarity and exact match.
+- steps: expected data of all steps for translation.
