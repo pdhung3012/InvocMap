@@ -1,0 +1,100 @@
+false	0.23404255319148937	str.charAt(pos+1)	str.substring(1,pos).lastIndexOf(str.charAt(1))	charAt	return the char value at index pos + 1 for str
+true	1.0	UnicodeTeX.getMap().containsKey(uCode)	UnicodeTeX.getMap().containsKey(uCode)	containsKey	return whether there contains a mapping to key uCode in UnicodeTeX.getMap()
+false	0.6444444444444445	paramMap.put(paramName,Short.valueOf(value));	paramMap.put(paramName,value)	put	associate key paramName with value Short.valueOf(value) in paramMap
+false	0.7674418604651163	pw.print(Integer.toHexString(rec.states))	Slog.v(#,#+Integer.toHexString(rec.states))	print	print Integer.toHexString(rec.states) for pw
+true	1.0	xml.append(item.getAlternateLabel())	xml.append(item.getAlternateLabel())	append	append item.getAlternateLabel() to xml
+false	0.21153846153846154	System.out.println(System.currentTimeMillis()-time);	callback.update(time)	print	print System.currentTimeMillis() - time to Standard Output
+false	0.65625	ntraceThreshold.get(ce.getKey())	ntraceThreshold.keySet()	get	return the value at key ce.getKey() in ntraceThreshold
+false	0.0	logger.finer("gotrequestfor:"+filename);		finer	log finer message "got request for: " + filename for logger
+false	0.8974358974358975	System.out.println("Table:"+tablename);	System.out.printf("Table:",tablename)	println	print "Table: " + tablename to Standard Output
+false	0.52	sb.append(can_access?iced:iced_unsafe)	#.append(iced).append(can_access?iced_unsafe:iced)	append	append can_access ? iced : iced_unsafe to sb
+true	1.0	cal.add(Calendar.DAY_OF_YEAR,idx)	cal.add(Calendar.DAY_OF_YEAR,idx)	add	add Calendar.DAY_OF_YEAR from idx to cal
+false	0.4146341463414634	System.setOut(newPrintStream(baos))	System.out.println(baos.toString(output))	setOut	reassign standard output stream to new PrintStream(baos) for System
+false	0.4772727272727273	(BigInteger.valueOf(86400000).multiply(BigInteger.valueOf(reloadLimitDays))).longValue()	(newInteger(96400000)).compareTo(newInteger(reloadLimitDays))	longValue	return long value of BigInteger.valueOf(96400000).multiply(BigInteger.valueOf(reloadLimitDays))
+false	0.38333333333333336	Arrays.asList(pattern.split("\\[[^\\]]*\\]"))	Boolean.valueOf(System.getProperty("\\[[^//]]*\\]",pattern))	asList	return List of pattern.split("\\[[^//]]*\\]") for Arrays
+false	0.46808510638297873	remoteDomain.equals(doc.attributeValue("from"))	"from".equals(doc.getAttribute(remoteDomain))	equals	return whether remoteDomain is equal to doc.attributeValue("from")
+false	0.5714285714285714	scriptBuffer.append(",null")	scriptBuffer.append(",null").append(scriptBuffer)	append	append ", null" to scriptBuffer
+false	0.3333333333333333	g.setColor(hRegion.textAttributes.getEffectColor())	g.setColor(Color.WHITE)	setColor	set current context color to hRegion.textAttributes.getEffectColor() in g
+true	1.0	html.append(token.getRawText())	html.append(token.getRawText())	append	append token.getRawText() to html
+false	0.6451612903225806	changedKeys.add(entry.getKey())	changedKeys.addAll(changedKeys)	add	add entry.getKey() to changedKeys
+true	1.0	dateFormatter.format(now.getTime())	dateFormatter.format(now.getTime())	format	format now.getTime() into String and append to dateFormatter for SimpleDateFormat
+true	1.0	listIdentifiersMap.put("headers",headers.iterator())	listIdentifiersMap.put("headers",headers.iterator())	put	associate key "headers" with value headers.iterator() in listIdentifiersMap
+true	1.0	newInteger(idAtividadeAux).intValue()	newInteger(idAtividadeAux).intValue()	intValue	return value of new Integer(idAtividadeAux) as int for Integer
+false	0.5466666666666666	consumofaturadoMes.setScale(0,BigDecimal.ROUND_HALF_UP)	consumofaturadoMes.setScale(0).divide(consumofaturadoMes,RoundingMode.DOWN)	setScale	return 0 scale and BigDecimal.ROUND_HALF_UP rounding for consumofaturadoMes
+true	1.0	buf.toString().toCharArray()	buf.toString().toCharArray()	toCharArray	return character array of buf.toString() for buf
+false	0.875	type.equals(short.class)	type.equals(char.class)	equals	return whether type equals short.class
+true	1.0	String.valueOf(usd.getSystemUserId())	String.valueOf(usd.getSystemUserId())	valueOf	return string representation of usd.getSystemUserId() for String
+false	0.5714285714285714	Runtime.getRuntime().gc()	Runtime.getRuntime().availableProcessors()	gc	Run garbage collector for Runtime.getRuntime() for Runtime
+true	1.0	Collections.binarySearch(alarmList,alarm,mIncreasingTimeOrder)	Collections.binarySearch(alarmList,alarm,mIncreasingTimeOrder)	binarySearch	search alarmList for alarm using binary search with mIncreasingTimeOrder comparator for Collections
+false	0.2619047619047619	mLooper.getThread().getState()	Optional.ofNullable(mLooper.isPresent()?Footer.createFromDOM(mLooper.get()):mLooper)	getState	return state of mLooper.getThread
+false	0.6341463414634146	java.time.LocalDateTime.of(val.getYear(),val.getMonthOfYear(),val.getDayOfMonth(),val.getHourOfDay(),val.getMinuteOfHour())	java.time.LocalDate.of(val.getYear(),val.getMonthOfYear(),val.getDayOfMonth())	of	obtain instance of LocalDateTime from val.getYear() val.getMonthOfYear() val.getDayOfMonth(), val.getHourOfDay() val.getMinuteOfHour() for LocalDateTime
+true	1.0	searchedElement.getQualifiedName().toString()	searchedElement.getQualifiedName().toString()	toString()	return String representation of searchedElement.getQualifiedName() for searchedElement
+false	0.3142857142857143	value.add(BigDecimal.valueOf(repaymentScheduleInstallment.getTotal()))	(value.add(value)).subtract(BigDecimal.ONE)	add	add BigDecimal.valueOf(repaymentScheduleInstallment.getTotal()) to value
+true	1.0	Math.sqrt(minDelta)	Math.sqrt(minDelta)	sqrt	return square root of minDelta for Math
+true	1.0	event.getFile().getAbsolutePath()	event.getFile().getAbsolutePath()	getAbsolutePath	return absolute pathname for event.getFile()
+true	1.0	newRandom().nextInt(iterationWeight)	newRandom().nextInt(iterationWeight)	nextInt	return random number with max value iterationWeight for Random
+false	0.2696629213483146	tableComponent.getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_ENTER,0),"downArrow")	IntStream.range(0,0).boxed().forEach(i->#.put(i,i+"downArrow"))	put	associate key Keystroke.getKeyStroke(KeyEvent.VK_ENTER, 0) with value "downArrow" in tableComponent.getInputMap()
+true	1.0	session.getTransaction().commit()	session.getTransaction().commit()	commit	flush and end the unit of work for session.getTransaction()
+false	0.35526315789473684	obj.get("field").isString().stringValue().equals(fieldName)	Mockito.when(obj.getConfigurationSetting("field",obj)).thenReturn(fieldName)	equals	return whether obj.get("field").isString().stringValue equals fieldName
+true	1.0	body.getBlock().getStatements().isEmpty()	body.getBlock().getStatements().isEmpty()	isEmpty	return if body.getBlocks().getStatements() is empty
+false	0.8863636363636364	expressions.subList(0,expressions.size()-1))	expressions.subList(0+1,expressions.size())	subList	return new List from index 0 to expressions.size() - 1 in expressions
+false	0.6086956521739131	(newDate()).getYear()	newDate(year).getTime()	getYear	return current year from new Date
+false	0.6923076923076923	Math.pow(-base,1/exponent)	Math.max(1,base-exponent)	pow	return - base to the power of 1 / exponent from Math
+true	1.0	((TreeTable)table).getTree().getPathForRow(row).getLastPathComponent()	((TreeTable)table).getTree().getPathForRow(row).getLastPathComponent()	getLastPathComponent	return the last path component of ((TreeTable)table).getTree().getPathForRow(row) for table
+true	1.0	DriverManager.getConnection(jdbcUrl,DbUser,DbPwd)	DriverManager.getConnection(jdbcUrl,DbUser,DbPwd)	getConnection	attempt to establish connection to given jdbcUrl DbUser DbPwd for DriverManager
+false	0.4857142857142857	random.nextInt(colors.length)	Arrays.copyOf(colors,colors.length)	nextInt	return a random number with maximum value colors.length
+false	0.6341463414634146	childList.add(linearLayout.getChildAt(i))	linearLayout.getChildAt(i)	add	add linearLayout.getChildAt(i) to childList
+false	0.6222222222222222	Intent.ACTION_VIEW.equals(intent.getAction())	mTypedActionToFilter.get(intent.getAction())	equals	return whether Intent.ACTION_VIEW equals intent.getAction()
+true	1.0	"en".equals(locale.getLanguage())	"en".equals(locale.getLanguage())	equals	return whether "en" equals locale.getLanguage()
+false	0.3548387096774194	Collator.getInstance()	LocaleList.getEmptyLocaleList()	getInstance	return current default locale Collator
+false	0.631578947368421	Long.valueOf(cursor.getLong(colIndex))	cursor.getLong(colIndex)	valueOf	return Long representation of cursor.getLong(colIndex)
+true	1.0	newFileInputStream(filePath).getFD()	newFileInputStream(filePath).getFD()	getFD	return FileDescriptor object that represents the connection to the File being used by new FileInputStream(filePath)
+false	0.7647058823529411	Modifier.isStatic(mLoader.getClass().getModifiers()	Modifier.isStatic(mLoader.getModifiers())	isStatic	return whether mLoader.getClass().getModifiers() is a static Modifier
+true	1.0	Integer.parseInt(mTestTime.getText().toString())	Integer.parseInt(mTestTime.getText().toString())	parseInt	convert mTestTime.getText().toString() to Integer
+false	0.2708333333333333	((TextView)localView).getText().toString()	localView.getText(localView,localView,localView)	toString	return String representation of ((TextView)localView).getText()
+false	0.16842105263157894	Thread(this).start()	Executors.newSingleThreadScheduledExecutor(StandardThreadFactoryBuilder.newThreadFactory(this))	start	begin execution of new Thread(this)
+true	1.0	Long.parseLong(inserted.getLastPathSegment())	Long.parseLong(inserted.getLastPathSegment())	parseLong	convert inserted.getLastPathSegment() to Long
+false	0.4117647058823529	Collections.sort(response)	sortedItems.get(response.getKey())	sort	sort response in ascending order for Collections
+true	1.0	Thread.currentThread().getName()	Thread.currentThread().getName()	getName	return the String name of the Thread.currentThread()
+true	1.0	Thread.currentThread().interrupt()	Thread.currentThread().interrupt()	interrupt	interrupt Thread.currentThread()
+false	0.6756756756756757	Locale.LanguageRange.parse(languages)	Locale.forLanguageTag(languages)	parse	parse languages to generate a Language Priority List for Locale.LanguageRange
+false	0.0	((String)convertView.getTag()).equals("double")		equals	return whether ((String) convertView.getTag() equals "double"
+false	0.5405405405405406	rev2.getStrings().equals(TestTools.makeSet("sse1_string1","sse1_string2"))	MoreAsserts.assertNotEqual("sse1_string2","sse1_string2")	equals	return whether rev2.getStrings() equals TestTools.makeSet("sse1_string1","sse1_string2")
+false	0.7391304347826086	(Class)type).isEnum()	((Class)type).isArray()	isEnum	return whether type is Enum
+false	0.7142857142857143	Character.isLowerCase(key.charAt(0)	Character.isDigit(key.charAt(0))	isLowerCase	return whether key.charAt(0) is lower case for Character
+false	0.3235294117647059	map.put("3",newInteger(1))	Integer.parseInt("3".substring(1))	put	associate key "3" with value new Integer(1)
+false	0.46153846153846156	dc.getConnection().setAutoCommit(false)	dc.getAutoCommit()	setAutoCommit	return the current auto commit mode for dc.getConnection()
+false	0.3516483516483517	StyleConstants.setFontSize(att,14)	StyleConstants.setFontSize(att,SettingsManager.getLocalPreferences().getChatRoomFontSize())	setFontSize	set the font size of att to 14 for StyleConstrants
+false	0.7547169811320755	UIManager.getColor("MenuItem.acceleratorForeground")	UIManager.put("MenuItem.acceleratorForeground",color)	getColor	return a color from default key "MenuItem.acceleratorForeground" for UIManager
+false	0.603448275862069	toggleableRadios.contains(Settings.System.RADIO_BLUETOOTH)	toggleableRadios.contains(toggleableRadios)	contains	return whether Settings.System.RADIO_BLUETOOTH contains char sequence for toggleableRadios
+false	0.7966101694915254	Environment.getExternalStorageDirectory().toString()	Environment.getExternalStorageDirectory().getAbsolutePath()	toString	return the String representation of Environment.getExternalStorageDirectory()
+true	1.0	Locale.getDefault()	Locale.getDefault()	getDefault	return current value of default Locale
+true	1.0	config.buildValidatorFactory().getValidator()	config.buildValidatorFactory().getValidator()	getValidator	build and return a ValidatorFactory instance based on config.buildValidatorFactory()
+true	1.0	factory.getMetamodel().collectionPersisters().values()	factory.getMetamodel().collectionPersisters().values()	values	return all collection persisters of factory.getMetamodel().collectionPersisters()
+false	0.41509433962264153	ByteBuffer.wrap(bytes)	ByteBuffer.wrap(bytes).order(ByteOrder.LITTLE_ENDIAN)	wrap	wrap bytes into a buffer for ByteBuffer
+false	0.9375	(Integer.valueOf(id)).intValue()	Integer.valueOf(id).intValue()	intValue	return Integer representation of Integer.valueOf(id)
+false	0.2761904761904762	newPropertyCombinations(module.getProperties(),module.getActiveLinkerNames()).collapseProperties().size()	module.getActiveLinkerNames()	size	return the size of new PropertyCombinations(module.getProperties(),module.getActiveLinkerNames()).collapseProperties()
+true	1.0	address.toUpperCase()	address.toUpperCase()	toUpperCase	convert address to uppercase
+false	0.6071428571428571	Class.forName("com.vladium.emma.rt.RT")	Object.class.getDeclaredMethod("com.cladium.emma.rt.RT")	forName	return Class object associated with "com.cladium.emma.rt.RT"
+false	0.7666666666666667	Math.max(0,container.height())	Math.max(0,container.bottom)	max	return the max of 0 and container.height()
+false	0.7692307692307693	Math.min(lp.height,height)	Math.min(height,lp.height)	min	return the minimum of lp.height and height
+true	1.0	mIntents.toArray(newIntent[mIntents.size()])	mIntents.toArray(newIntent[mIntents.size()])	toArray	return array representation of mIntents with size new Intent(mIntents.size())
+false	0.24242424242424243	Thread.sleep((long)(ViewConfiguration.getLongPressTimeout()*1.5f))	mTransformedView.setTag(1,5)	sleep	sleep Thread for (long)(ViewConfiguration.getLongPressTimeout() * 1.5 )
+false	0.3870967741935484	Integer.parseInt(metaCursor.getString(1))	Integer.valueOf(metaCursor.getString(metaCursor.getColumnIndex(MediaStore.Images.Media._ID)))	parseInt	parse metaCursor.getString(1) to Integer
+true	1.0	itemTexts.getHelp().length()	itemTexts.getHelp().length()	length	return length of itemTexts.getHelp()
+true	1.0	Thread.sleep(MediaNames.PAUSE_WAIT_TIME)	Thread.sleep(MediaNames.PAUSE_WAIT_TIME)	sleep	sleep Thread for MediaNames.PAUSE_WAIT_TIME
+false	0.5535714285714286	File.createTempFile("shareimage",".png")	File.createTempFile(UUID.randomUUID().toString(),".png")	createTempFile	create empty temporary file with name "shareimage" and suffix ".png" for File
+false	0.5945945945945946	definition.getValues().iterator()	definition.getReturnValueDescriptor()	iterator	return an Iterator for definition.getValues()
+false	0.4418604651162791	Math.min(Math.abs(frame.top-containerCoordsY),Math.abs(containerCoordsY-frame.bottom))	Math.max(containerCoordsY,frame.bottom)	min	return the minimum of Math.abs(frame.top = containerCoordsY) and Math.abs(containerCoordsY - frame.bottom)
+false	0.9230769230769231	encodingCollection.iterator().next()	encodingCollection.iterator().hasNext()	next	return whether there are more elements in encodingCollection.iterator()
+false	0.23214285714285715	Math.max(mPreviewText.getMeasuredWidth(),key.width+mPreviewText.getPaddingLeft()+mPreviewText.getPaddingRight())	Math.min(key.width,key.height)	max	return the max of mPreviewText.getMeasuredWidth() and key.width + mPreviewText.getPaddingLeft() + mPreviewText.getPaddingRight()
+false	0.32432432432432434	child.getChildren().iterator().next()	child.hasMoreElements()	next	return whether there are more elements in child.getChildren().iterator()
+false	0.0	object.getClass().getName().endsWith(".BuddhistCalendar")		endsWith	return whether object.getClass().getName() ends with ".BuddhistCalendar" suffix
+false	0.3611111111111111	cls.getSuperclass()	cls.isAnnotationPresent(Store.class)	getSuperclass	return super class of cls
+true	1.0	Duration.ofMinutes(10)	Duration.ofMinutes(10)	ofMinutes	return Duration of 10 minutes
+true	1.0	ZonedDateTime.ofInstant(calendar.toInstant(),calendar.getTimeZone().toZoneId()).toInstant()	ZonedDateTime.ofInstant(calendar.toInstant(),calendar.getTimeZone().toZoneId()).toInstant()	toInstant	convert ZonedDateTime.ofInstant(calendar.toInstant(), calendar.getTimeZone().toZoneId()) for ZonedDateTime
+false	0.7162162162162162	Executors.newCachedThreadPool(getTestThreadFactory("Worker"))	Executors.newScheduledThreadPool(threads,newWorkerThreadFactory("Worker"))	newCachedThreadPool	create a thread pool that creates new threads as needed but will reuse getTestThreadFactory("Worker")
+false	0.6785714285714286	constraintViolations.iterator().next().getPropertyPath()	path.iterator().next().getPropertyPath()	getPropertyPath	return the property path for constrainViolations.iterator().next()
+true	1.0	ftSession.getTransaction().begin()	ftSession.getTransaction().begin()	begin	start a resource transaction for ftSession.getTransaction()
+false	0.35714285714285715	klass.getPackage().getName()	klass.isArray()	getName	return the name of the package for klass.getPackage()
+true	1.0	Persistence.createEntityManagerFactory("options")	Persistence.createEntityManagerFactory("options")	createEntityManagerFactory	create and return EntityManagerFactory for "options" using Persistence

@@ -1,0 +1,6 @@
+Achieve the data at:
+https://drive.google.com/file/d/1hKjDCAXyde-TJF46qDlA-tYXng19EMk4/view?usp=sharing
+In this folder you will have:
+- Parallel corpuses for Machine Translation.
+- Neural Embedding prefix and postfix corpuses.
+- Model of Neural Embedding for CMN inferencce.

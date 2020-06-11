@@ -1,0 +1,16 @@
+List of problems for improvement
+88 --> check source files in testing data and see the important of list of variables and terms
+86 --> miss String literal in extraction
+83 --> extract int as term
+80 --> true
+79 --> should prioritize terms appeared in code
+78 --> grammar incorrect in string literal, should penalty on long translated candidates
+76 --> maybe remove the first return statements, only one variable extracted
+75 --> actual true
+70 --> strong related result
+69 --> update term selection
+67 --> check int#var and order of tt and 14
+66 --> not specify boolean --> examples
+64 --> check term appear
+9 --> prioritize '+' sign
+52 --> wrong oracle
