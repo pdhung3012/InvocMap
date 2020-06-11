@@ -1,0 +1,4 @@
+Java:
+- Code for creating corpuses and do evaluation
+Python:
+- Code for creating Doc2Vec models and using Doc2Vec for CMN inference. 

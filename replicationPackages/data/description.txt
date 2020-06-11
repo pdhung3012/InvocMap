@@ -1,3 +1,6 @@
+- LPCS folder: information about code snippets in Literate Programming format.
+
+External data (make the supplement data larger than 100MB)
 Achieve the data at:
 https://drive.google.com/drive/folders/1w-03pXw-KKXHH7B-Nk95EOXir78s5U3C?usp=sharing
 In this folder you will have:
