@@ -58,6 +58,8 @@ To run for a combined model:
 - Extract all contents inside root folder of "replicationPackages/result/RQ4/steps/all_steps_data.zip" to "replicate" folder
 - Change your PathLiterateProgrammingEvaluationOutput to location of 'replicate' folder.
 - Change your PathLiterateProgrammingCorpus to location of 'all_steps_data' folder.
+- Run:
+```java LiterateProgrammingEvaluation.java```
 - You should see the evaluation at the 'replicate' folder. Translated results for each LPCSs is shown in step7 folder of 'all_steps_data' folder.
 
 # Instruction for Replication of Process from Literate Programming Code Snippets to Final Code:
