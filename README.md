@@ -16,7 +16,7 @@ By evaluation on data from 1000 high-quality Java projects, we got the precision
 - Eclipse IDE with JDK>=11.
 
 
-# Instruction for Replication:
+# Instruction for Replication of Evaluation:
 
 We put all of our code, data and result inside replicationPackage folder. This folder has following items:
 
@@ -46,35 +46,50 @@ To run for a combined model:
 
 **RQ3. What is the accuracy of Machine Translation model for inferring SASTs from CMNs?**
 - Download and extract the MT parallel corpuses at the link inside data folder
-
-```python language_model_training.py --cuda --batch_size=32 --lr=0.01 --reduce_rate=0.9 --save='/ag_lm_model/'' ```
-
-Next, You can run 3 following configurations:
-- For supervised classification, run:
-
-```python classifier_training.py --cuda --lr=0.001 --batch_size=128 --save='/classify_no_pre/' --pre_train='' --number_per_class=1000 --reduce_rate=0.95```
-
-- For original semi supervised classification, run:
-
-```python classifier_training.py --cuda --lr=0.001 --batch_size=128 --save='/classify_with_pre/' --pre_train='/ag_lm_model' --number_per_class=1000 --reduce_rate=0.95```
-
-- For GAN semi supervised classification, run:
-
-```python Adversarial_training.py --cuda --lr=0.001 --batch_size=128 --save='/ag_adv_model/' --pre_train='/ag_lm_model' --number_per_class=1000 --reduce_rate=0.95```
-
-You will see the detail...txt as the output prediction.
+- Select your MT corpus and set its location in PathMachineTranslationCorpus.
+- Extract the testing data as one of zip files in /results/RQ3 folders to your select MT corpus's folder.
+- Change your PathMachineTranslationEvalOutput to location 'replicate' folder.
+- Run:
+```java MachineTranslationEvaluation.java```
+- You should see the output in 'replicate' folder.
 
 
-**RQ4. **
+**RQ4. What is the overall accuracy of InvocMap model for realizing Literate Programming?**
+- Extract all contents inside root folder of "replicationPackages/result/RQ4/steps/all_steps_data.zip" to "replicate" folder
+- Change your PathLiterateProgrammingEvaluationOutput to location of 'replicate' folder.
+- Change your PathLiterateProgrammingCorpus to location of 'all_steps_data' folder.
+- You should see the evaluation at the 'replicate' folder. Translated results for each LPCSs is shown in step7 folder of 'all_steps_data' folder.
 
-- For RQ 4.1:
+# Instruction for Replication of Process from Literate Programming Code Snippets to Final Code:
+- Extract all contents inside root folder of "replicationPackages/result/RQ4/steps/all_steps_data.zip" to "replicate" folder
+- Change your PathLiterateProgrammingExpReplication to location of 'all_steps_data' folder.
+- Select your MT corpus and set its location in PathMachineTranslationCorpus.
+From now, run the following steps:
 
-```python evaluateRQ4-1.py```
+**Tokenization**
+1) To parse code with NL to generate tokens, run:
+```java TokensExtractionFromLPCodeTree.java```
+2) To split precode, postcode and integrate NL information, run:
+```java PrePostCodeAndNLTokensAllocation.java```
 
-Output: the tuning result on classification of 'talendesb' system.
+**Neural Embedding**
+3) Change the locations of Doc2Vec models to folder of Doc2Vec you got from the data, before run this Python file:
+```python GenerateCMNByCombinationModel.py```
+You should get the generated CMNs in step2 folder.
 
-- For RQ 4.2:
+**Machine Translation**
+4) To integrate CMNs to precode, postcode and NL, run:
+```java TranslationInputPreparation.java```
+5) Take input inside step3_inputSequence and run the MT model to get trans.txt file. Then, you put this file to step4_trans folder.
+6) To split translation results to be corresponding with each LPCSs, run:
+```java TranslationOutputSplitByInputNL.java```
+7) To reorder the translated results, run:
+```java TranslationOutputReordering.java```
+8) To find the SAST related as the translated results of CMNs, run:
+```java TranslationOutputMIAllocation.java```
 
-```python evaluateRQ4-2.py```
+**Program Analysis and Ranking Candidates**
+9) To assign variables to SASTs and rank results, run:
+```java MICandidateGenerationAndRanking.java```
 
-Output: the tuning result on regression of 'talendesb' system.
+You should see the final output in 'step7' folder.
